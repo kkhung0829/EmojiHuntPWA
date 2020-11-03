@@ -1,6 +1,6 @@
 {
   "configVersion": 1,
-  "timestamp": 1604380557322,
+  "timestamp": 1604381876299,
   "index": "https://kkhung0829.github.io/EmojiHuntPWA/index.html",
   "assetGroups": [
     {
@@ -118,8 +118,8 @@
         "https://kkhung0829.github.io/EmojiHuntPWA/common-es2015.5ba1bd739b37c0d5b62a.js",
         "https://kkhung0829.github.io/EmojiHuntPWA/common-es5.5ba1bd739b37c0d5b62a.js",
         "https://kkhung0829.github.io/EmojiHuntPWA/index.html",
-        "https://kkhung0829.github.io/EmojiHuntPWA/main-es2015.18b12119c1dab14eb2b5.js",
-        "https://kkhung0829.github.io/EmojiHuntPWA/main-es5.18b12119c1dab14eb2b5.js",
+        "https://kkhung0829.github.io/EmojiHuntPWA/main-es2015.1a9ffd897c3a082d3250.js",
+        "https://kkhung0829.github.io/EmojiHuntPWA/main-es5.1a9ffd897c3a082d3250.js",
         "https://kkhung0829.github.io/EmojiHuntPWA/manifest.webmanifest",
         "https://kkhung0829.github.io/EmojiHuntPWA/polyfills-core-js-es2015.22f1882a210e2656646e.js",
         "https://kkhung0829.github.io/EmojiHuntPWA/polyfills-core-js-es5.22f1882a210e2656646e.js",
@@ -471,9 +471,9 @@
     "https://kkhung0829.github.io/EmojiHuntPWA/assets/shapes.svg": "5413e95adabcb2cb639970051f55e0ddb64ace53",
     "https://kkhung0829.github.io/EmojiHuntPWA/common-es2015.5ba1bd739b37c0d5b62a.js": "5a08ccc29ab2883312a1ea3bbb8f9f4fdbda958f",
     "https://kkhung0829.github.io/EmojiHuntPWA/common-es5.5ba1bd739b37c0d5b62a.js": "f0fedf36adae5bcd1f1b83329baf976ad472c04b",
-    "https://kkhung0829.github.io/EmojiHuntPWA/index.html": "51e85a7608c955540edd7ab4c92d57dcc9f0e7ff",
-    "https://kkhung0829.github.io/EmojiHuntPWA/main-es2015.18b12119c1dab14eb2b5.js": "524c37d1c0130ff86a50418bc5f1db4f8b860759",
-    "https://kkhung0829.github.io/EmojiHuntPWA/main-es5.18b12119c1dab14eb2b5.js": "c08116849eef9e07c6806a9e4411da9a9f371965",
+    "https://kkhung0829.github.io/EmojiHuntPWA/index.html": "e15a2dab317500bf2359f6cf6ddae66a89c41048",
+    "https://kkhung0829.github.io/EmojiHuntPWA/main-es2015.1a9ffd897c3a082d3250.js": "46c445179e66819862f825ae965530f9b1296f7f",
+    "https://kkhung0829.github.io/EmojiHuntPWA/main-es5.1a9ffd897c3a082d3250.js": "9ece861761bbd9cd42b0024f2875e49d8b39af1d",
     "https://kkhung0829.github.io/EmojiHuntPWA/manifest.webmanifest": "9a088b7c4339228d1082e666ce105dc889bc180c",
     "https://kkhung0829.github.io/EmojiHuntPWA/polyfills-core-js-es2015.22f1882a210e2656646e.js": "f007c630c357ee7eeec2289a6cfc013dbcbe6fe9",
     "https://kkhung0829.github.io/EmojiHuntPWA/polyfills-core-js-es5.22f1882a210e2656646e.js": "8531ee642b05d9e12e859babeaec61c2b1c1e57a",
