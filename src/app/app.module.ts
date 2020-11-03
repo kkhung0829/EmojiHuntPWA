@@ -21,7 +21,7 @@ import { MobileNetService } from './home/mobile-net.service';
     StatusBar,
     SplashScreen,
     { provide: RouteReuseStrategy, useClass: IonicRouteStrategy },
-    { provide: APP_INITIALIZER, useFactory: init, deps: [MobileNetService]}
+    { provide: APP_INITIALIZER, useFactory: init, deps: [MobileNetService], multi: true},
   ],
   bootstrap: [AppComponent]
 })
