@@ -1,20 +1,31 @@
 <ion-header [translucent]="true">
   <ion-toolbar>
     <ion-title>
-      Blank
+      {{predictLabel}} - {{predictConfidence | percent}}
     </ion-title>
   </ion-toolbar>
 </ion-header>
 
 <ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">Blank</ion-title>
-    </ion-toolbar>
-  </ion-header>
-
   <div id="container">
-    <strong>Ready to create an app?</strong>
-    <p>Start with Ionic <a target="_blank" rel="noopener noreferrer" href="https://ionicframework.com/docs/components">UI Components</a></p>
+    <ion-grid>
+      <ion-row class="ion-align-items-center">
+        <ion-col>
+          <app-camera [targetPixels]="VIDEO_PIXELS" #camera></app-camera>
+        </ion-col>
+        <ion-col *ngIf="predicts">
+          <img [src]="findEmoji(predicts[0].label)?.path" />
+        </ion-col>
+        <ion-col *ngIf="predicts">
+          <table>
+            <tr *ngFor="let predict of predicts">
+              <td>{{findEmoji(predict.label)?.emoji}}</td>
+              <td>{{predict.label}}</td>
+              <td>{{predict.value | percent}}</td>    
+            </tr>
+          </table>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
   </div>
 </ion-content>
