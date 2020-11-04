@@ -1,7 +1,7 @@
 <ion-header [translucent]="true">
   <ion-toolbar>
-    <ion-title>
-      {{predictLabel}} - {{predictConfidence | percent}}
+    <ion-title *ngIf="predicts">
+      {{predicts[0].emojiItem.emoji}} - {{predicts[0].confidence | percent}}
     </ion-title>
   </ion-toolbar>
 </ion-header>
@@ -13,15 +13,16 @@
         <ion-col>
           <app-camera [targetPixels]="VIDEO_PIXELS" #camera></app-camera>
         </ion-col>
+<!--
         <ion-col *ngIf="predicts">
           <img [src]="findEmoji(predicts[0].label)?.path" />
         </ion-col>
+-->
         <ion-col *ngIf="predicts">
           <table>
             <tr *ngFor="let predict of predicts">
-              <td>{{findEmoji(predict.label)?.emoji}}</td>
-              <td>{{predict.label}}</td>
-              <td>{{predict.value | percent}}</td>    
+              <td>{{predict.emojiItem.emoji}}</td>
+              <td>{{predict.confidence | percent}}</td>    
             </tr>
           </table>
         </ion-col>

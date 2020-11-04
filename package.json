@@ -5,7 +5,7 @@
   "homepage": "https://ionicframework.com/",
   "scripts": {
     "ng": "ng",
-    "start": "ng serve",
+    "start": "ng serve --base-href /EmojiHuntPWA/ --open true",
     "build": "ng build",
     "test": "ng test",
     "lint": "ng lint",

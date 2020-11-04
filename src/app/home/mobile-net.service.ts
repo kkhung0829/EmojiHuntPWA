@@ -1,4 +1,4 @@
-import { Injectable } from '@angular/core';
+import { Injectable, Inject } from '@angular/core';
 
 import * as tfc from '@tensorflow/tfjs-core';
 import {loadFrozenModel, FrozenModel} from '@tensorflow/tfjs-converter';
@@ -19,7 +19,7 @@ export class MobileNetService {
 
   model: FrozenModel;
 
-  constructor() { }
+  constructor() {}
 
   async load() {
 // console.log('MobileNetService call loadFrozenModel()...');
@@ -48,7 +48,7 @@ export class MobileNetService {
     return this.model.execute(dict, OUTPUT_NODE_NAME) as tfc.Tensor1D;
   }
 
-  getTopKClasses(predictions: tfc.Tensor1D, topK: number) {
+  getTopKClasses(predictions: tfc.Tensor1D, topK?: number) {
     const values = predictions.dataSync();
     predictions.dispose();
 
@@ -58,7 +58,10 @@ export class MobileNetService {
     }
     predictionList = predictionList.sort((a, b) => {
       return b.value - a.value;
-    }).slice(0, topK);
+    });
+    if (topK !== undefined) {
+      predictionList = predictionList.slice(0, topK);
+    }
 
     return predictionList.map(x => {
       return {label: SCAVENGER_CLASSES[x.index], value: x.value};
