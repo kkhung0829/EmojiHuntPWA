@@ -1,6 +1,6 @@
 {
   "configVersion": 1,
-  "timestamp": 1604470615345,
+  "timestamp": 1604472302431,
   "index": "https://kkhung0829.github.io/EmojiHuntPWA/index.html",
   "assetGroups": [
     {
@@ -471,7 +471,7 @@
     "https://kkhung0829.github.io/EmojiHuntPWA/assets/shapes.svg": "5413e95adabcb2cb639970051f55e0ddb64ace53",
     "https://kkhung0829.github.io/EmojiHuntPWA/common-es2015.5ba1bd739b37c0d5b62a.js": "5a08ccc29ab2883312a1ea3bbb8f9f4fdbda958f",
     "https://kkhung0829.github.io/EmojiHuntPWA/common-es5.5ba1bd739b37c0d5b62a.js": "f0fedf36adae5bcd1f1b83329baf976ad472c04b",
-    "https://kkhung0829.github.io/EmojiHuntPWA/index.html": "52c44ef0a47f565b5fffa2cc8b2da700aa95a534",
+    "https://kkhung0829.github.io/EmojiHuntPWA/index.html": "7b7a8f7956f13336f5f2b906c55220e3b9be8bff",
     "https://kkhung0829.github.io/EmojiHuntPWA/main-es2015.fbf82b8acaa3b19619c8.js": "0e285c9a2b8bc035b5dc671fcb6ee30da1fdec44",
     "https://kkhung0829.github.io/EmojiHuntPWA/main-es5.fbf82b8acaa3b19619c8.js": "ba5f757e44f2949fccbbba174b2128141e47d8eb",
     "https://kkhung0829.github.io/EmojiHuntPWA/manifest.webmanifest": "9a088b7c4339228d1082e666ce105dc889bc180c",
