@@ -69,7 +69,7 @@ export class HomePage implements AfterViewInit {
           confidence: value.value,
         };
       })
-      .slice(0, 10);
+      .slice(0, 6);
   }
 
   private loopPredict() {

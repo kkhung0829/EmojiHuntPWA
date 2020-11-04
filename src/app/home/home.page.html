@@ -13,18 +13,22 @@
         <ion-col>
           <app-camera [targetPixels]="VIDEO_PIXELS" #camera></app-camera>
         </ion-col>
-<!--
-        <ion-col *ngIf="predicts">
-          <img [src]="findEmoji(predicts[0].label)?.path" />
-        </ion-col>
--->
-        <ion-col *ngIf="predicts">
-          <table>
-            <tr *ngFor="let predict of predicts">
-              <td>{{predict.emojiItem.emoji}}</td>
-              <td>{{predict.confidence | percent}}</td>    
-            </tr>
-          </table>
+      </ion-row>
+      <ion-row *ngIf="predicts" class="ion-align-items-center">
+        <ion-col>
+          <ion-row class="ion-justify-content-center">
+            <ion-col size="auto">
+              <img [src]="predicts[0].emojiItem.path" />
+            </ion-col>
+            <ion-col size="auto">
+              <table>
+                <tr *ngFor="let predict of predicts">
+                  <td>{{predict.emojiItem.emoji}}</td>
+                  <td>{{predict.confidence | percent}}</td>    
+                </tr>
+              </table>
+            </ion-col>  
+          </ion-row>
         </ion-col>
       </ion-row>
     </ion-grid>
